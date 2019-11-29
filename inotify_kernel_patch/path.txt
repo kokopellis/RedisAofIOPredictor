@@ -1,0 +1,29 @@
+Based on kernel v4.19.76
+
+
+vfs.c: 1007
+open.c: 318
+read_write.c 509 551 964 1454 1621 1871
+
+/include/linux/fsnotify.h: 192 fsnotify_modify() 203
+fsnotify.c: 321	fsnotify() 373
+fsnotify.c: 189		send_to_group()   237 return group->ops->handle_event()
+/include/linux/fsnotify_backend.h: 136	fsnotify_group 137
+/include/linux/fsnotify_backend.h: 105	fsnotify_ops 106
+inotify_fsnotify.c 204 intofiy_fsnotify_ops 205
+
+inotify.h: 32 inotify_handle_event();
+inotify_fsnotify.c 67 inotify_handle_event() 124!!! give value to event_info
+	inotify.h 6  inotify_event_info***
+	inotify.h 14 inotify_inode_mark
+	fsnotify_backend.h 123 fsnotify_event
+	fsnotify_backend.h 306 fsnotify_mark
+
+	
+inotify_user.c 171 copy_event_to_user()  190!!! give value to user api
+/include/uapi/linux/inotify.h 21 inotify_event
+
+current inotify header:
+/usr/include/linux/inotify.h
+/usr/include/x86_64-linux-gnu/bits/inotify.h
+/usr/include/x86_64-linux-gnu/sys/inotify.h
