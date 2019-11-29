@@ -1,0 +1,30 @@
+17701:C 28 Nov 2019 19:12:57.384 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+17701:C 28 Nov 2019 19:12:57.384 # Redis version=5.0.5, bits=64, commit=e205ed31, modified=1, pid=17701, just started
+17701:C 28 Nov 2019 19:12:57.384 # Configuration loaded
+17701:M 28 Nov 2019 19:12:57.387 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+17701:M 28 Nov 2019 19:12:57.387 # Server can't set maximum open files to 10032 because of OS error: Operation not permitted.
+17701:M 28 Nov 2019 19:12:57.387 # Current maximum open files is 4096. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+17701:M 28 Nov 2019 19:12:57.389 * Running mode=standalone, port=7001.
+17701:M 28 Nov 2019 19:12:57.389 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+17701:M 28 Nov 2019 19:12:57.389 # Server initialized
+17701:M 28 Nov 2019 19:12:57.389 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+17701:M 28 Nov 2019 19:12:57.389 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+17701:M 28 Nov 2019 19:12:57.389 * Ready to accept connections
+17701:M 28 Nov 2019 19:13:06.958 * Fsync I/O time cost 1894840us
+17701:M 28 Nov 2019 19:13:07.167 * Fsync I/O time cost 106966us
+17701:M 28 Nov 2019 19:13:07.278 * Fsync I/O time cost 9201us
+17701:M 28 Nov 2019 19:13:07.392 * Fsync I/O time cost 12359us
+17701:M 28 Nov 2019 19:13:07.504 * Fsync I/O time cost 10757us
+17701:M 28 Nov 2019 19:13:07.615 * Fsync I/O time cost 8604us
+17701:M 28 Nov 2019 19:13:07.733 * Fsync I/O time cost 16825us
+17701:M 28 Nov 2019 19:13:07.850 * Fsync I/O time cost 15771us
+17701:M 28 Nov 2019 19:13:07.968 * Fsync I/O time cost 16764us
+17701:M 28 Nov 2019 19:13:08.117 * Fsync I/O time cost 46965us
+17701:M 28 Nov 2019 19:13:08.270 * Fsync I/O time cost 51831us
+17701:M 28 Nov 2019 19:13:08.430 * Fsync I/O time cost 56584us
+17701:M 28 Nov 2019 19:13:11.174 * Fsync I/O time cost 2639478us
+17701:signal-handler (1574990070) Received SIGINT scheduling shutdown...
+17701:M 28 Nov 2019 19:14:30.677 # User requested shutdown...
+17701:M 28 Nov 2019 19:14:30.677 * Calling fsync() on the AOF file.
+17701:M 28 Nov 2019 19:14:30.890 * Removing the pid file.
+17701:M 28 Nov 2019 19:14:30.890 # Redis is now ready to exit, bye bye...
